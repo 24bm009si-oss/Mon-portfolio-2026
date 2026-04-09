@@ -453,3 +453,207 @@ footer {
     color: white;
     font-size: 1.5rem;
 }
+/* Variables de couleurs pour plus de facilité */
+:root {
+    --primary-color: #2563eb;
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* Style du Header de la page */
+.passions-header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.passions-header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Grille des passions */
+.passions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+
+/* Design des cartes */
+.passion-card {
+    background: var(--card-bg);
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.passion-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+
+/* Style des icônes */
+.icon-box {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.passion-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.passion-card p {
+    line-height: 1.6;
+    color: #64748b;
+}
+
+/* Petit ajustement pour le footer pour qu'il soit bien en bas */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #1e293b;
+    color: white;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+/* --- Global Styles --- */
+:root {
+    --accent-color: #00d2ff;
+    --second-color: #3a7bd5;
+    --dark-bg: #0f172a;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+}
+
+.entertainment-container {
+    background: radial-gradient(circle at top right, #1e293b, #0f172a);
+    min-height: 100vh;
+    padding: 80px 5%;
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(to right, #00d2ff, #91eaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+/* --- La Grille --- */
+.entertainment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+/* --- Cartes Glassmorphism --- */
+.ent-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+}
+
+.ent-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    border-color: var(--accent-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 210, 255, 0.2);
+}
+
+/* --- Icones & Images --- */
+.card-image {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, var(--second-color), var(--accent-color));
+    font-size: 4rem;
+    color: white;
+}
+
+/* --- Contenu de la carte --- */
+.card-content {
+    padding: 30px;
+}
+
+.badge {
+    background: rgba(0, 210, 255, 0.2);
+    color: var(--accent-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-content h3 {
+    margin: 15px 0;
+    font-size: 1.8rem;
+}
+
+.card-content p {
+    color: #94a3b8;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* --- Bouton Stylé --- */
+.btn-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.btn-more:hover {
+    background: var(--accent-color);
+    color: var(--dark-bg);
+}
+
+.btn-more i {
+    transition: transform 0.3s;
+}
+
+.btn-more:hover i {
+    transform: translateX(5px);
+}
