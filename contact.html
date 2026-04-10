@@ -29,40 +29,53 @@
             </ul>
         </nav>
     </header> 
-    <main>
-    <section class="contact-container">
-        <h2>Contactez-moi</h2>
-        
-        <div class="contact-content">
-            <div class="contact-info">
-                <h3>Mes coordonnées</h3>
-                <p><i class="fa-solid fa-location-dot"></i> Basé à : Lubumbashi, RDC</p>
-                <p><i class="fa-solid fa-phone"></i> Téléphone : +243 831 549 268</p>
-                
-                <div class="social-buttons">
-                    <a href="https://wa.me/243831549268" target="_blank" class="btn-social whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                    </a>
-                    <a href="https://t.me/+243831549268" target="_blank" class="btn-social telegram">
-                        <i class="fa-brands fa-telegram"></i> Telegram
-                    </a>
-                </div>
-            </div>
-
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Nom complet</label>
-                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Téléphone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
-                </div>
-                <button type="submit" class="hero a" style="border:none; cursor:pointer; width:100%;">Envoyer</button>
-            </form>
-        </div>
+    <main class="contact-container">
+    <section class="contact-header">
+        <h1>Restons en contact</h1>
+        <p>Une idée de projet, une question ou juste envie de dire bonjour ? Envoyez-moi un message !</p>
     </section>
+
+    <div class="contact-wrapper">
+        <div class="contact-info">
+            <h3>Mes coordonnées</h3>
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>prince@exemple.com</span>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+243 000 000 000</span>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Ville, Pays</span>
+            </div>
+            
+            <div class="social-links-contact">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Votre adresse email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Comment puis-je vous aider ?" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Envoyer le message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+    </div>
 </main>
+   
     <footer>
         <div>
             <p>&copy; Prince tous les droits réservés</p>
